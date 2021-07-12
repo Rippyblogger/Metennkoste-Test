@@ -128,17 +128,25 @@ body {
 /* App section */
 
 .app-section {
-	height: 25vh;
+	/* height: 25vh; */
+	display: flex;
+	flex-direction: column;
 	background-color: #f0f0f0;
 	align-items: center;
 	justify-content: center;
 }
+
+.app-padding{
+	/* padding: 5rem; */
+}
+
 
 .app-text {
 	font-size: 1.3rem;
 	font-weight: 500;
 	text-align: center;
 	padding: 1rem;
+	margin-top: 2rem;
 }
 
 .app-text > h2 {
@@ -151,12 +159,11 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-    margin-top: 1rem;
 }
 
 .app-section-container > div {
 	padding: 1rem;
-	margin: 0rem 7rem 0rem 7rem;
+	padding: 3rem;
 }
 
 .app-section-container > div > p {
@@ -173,7 +180,7 @@ body {
 	background-color: #333333;
 	flex-direction: row;
 	justify-content: center;
-	height: 35rem;
+	/* height: 35rem; */
 }
 
 .triad-grid-cont {
@@ -331,15 +338,11 @@ footer {
 @media only screen and (max-width: 767px) {
 	/* web app section */
 	.app-section {
-		height: 35%;
+		/* height: 35%; */
 	}
 
 	.app-section-container {
 		flex-direction: column;
-	}
-
-	.app-section-container > div {
-		margin: 3rem;
 	}
 
 	/* triad styling */
@@ -388,6 +391,10 @@ footer {
     .app-section-container > div {
 	padding: 0rem;
 	margin: 0rem;
+}
+
+.app-section{
+	height: 35rem;
 }
 
 /* Triad styling */
